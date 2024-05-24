@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <section class="flex">
+
+        <a href="index.html" class="logo"> <img src="./image/logo.png" alt="FreshFair Logo"></a>
+
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">home</a>
+            <div class="dropdown">
+                <a href="products.html" class="nav-link">Products</a>
+                <div class="dropdown-content">
+                  <a href="./diary.html">Diary Products</a>
+                  <a href="./vegetables.html">Vegetables</a>
+                  <a href="./cosmetics.html">Cosmetics</a>
+                  <a href="./fruits.html">Fruits</a>
+                  <a href="./meat.html">Meat and Sea Food</a>
+                  
+                </div>
+              </div>              
+            <a href="about.html" class="nav-link">about</a>
+            <a href="contact.html" class="nav-link">contact</a>
+            <a href="order.html" class="nav-link active">Order</a>
+            <a href="loyalty_registration.html" class="nav-link">Loyalty Registration</a>
+
+        </nav>
+        
+
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>56.97</span> </h3>
+            <a href="#" class="btn">checkout cart</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">create one</a></p>
+        </form>
+
+    </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="heading">
+    <h1>Order</h1>
+    <p> <a href="home.html">home >></a> Order </p>
+</div>
+
+
+<div class="order_container">
+    <div class="address-section">
+        <button class="add-address-btn">+ Add New Delivery Address</button>
+    </div>
+
+    <div class="order_container">
+        <form class="address-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Input full name">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="House no. / building / street / area">
+            </div>
+            <div class="form-group">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="text" id="mobile-number" placeholder="Input mobile number">
+            </div>
+            <div class="form-group">
+                <label for="landmark">Landmark (Optional)</label>
+                <input type="text" id="landmark" placeholder="E.g. beside train station">
+            </div>
+            <div class="form-group">
+                <label for="province">Province</label>
+                <select id="province">
+                    <option value="" disabled selected>Please choose your province</option>
+                    <option value="central">Central</option>
+                    <option value="eastern">Eastern</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="north-central">North Central</option>
+                    <option value="northern">Northern</option>
+                    <option value="north-western">North Western</option>
+                    <option value="sabaragamuwa">Sabaragamuwa</option>
+                    <option value="southern">Southern</option>
+                    <option value="uva">Uva</option>
+                </select>
+<br>
+<br>
+
+                <label for="City">City</label>
+                <input type="text" id="City" placeholder="Input City">
+
+                <br>
+                <br>
+
+                <label for="Area">Area</label>
+                <input type="text" id="Area" placeholder="Input Area">
+
+                
+            </div>
+            <div class="form-group">
+                <label>Select a label for effective delivery:</label>
+                <div class="delivery-labels">
+                    <button type="button" class="label-btn">Home</button>
+                    <button type="button" class="label-btn">Office</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Default Address (Optional)</label>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="default-delivery">
+                        <label for="default-delivery">Default delivery address</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="default-billing">
+                        <label for="default-billing">Default billing address</label>
+                    </div>
+                </div>
+                <p>Your existing default address setting will be replaced if you make some changes here.</p>
+            </div>
+            <button type="submit" class="regbtn">Save</button>
+        </form>
+    </div>
+
+
+</div>
+<div class="order_container">
+    <div class="order-section">
+        <div class="order-item">
+            <img src="./dairy 2/7.png" alt="Product Image" class="product-image">
+            <div class="item-details">
+                <h3>Strawbery Ice Cream</h3>
+                <div class="quantity">Qty: 1</div>
+                <div class="price">Rs. 650.00</div>
+            </div>
+        </div>
+
+        <div class="order-item">
+            <img src="./vegetables/pumpkin.jpg" alt="Product Image" class="product-image">
+            <div class="item-details">
+                <h3>Organic Pumpkin</h3>
+                <div class="quantity">Qty: 1kg</div>
+                <div class="price">Rs. 850.00</div>
+            </div>
+        </div>
+
+        <div class="order-item">
+            <img src="./vegetables/giner.jpg" alt="Product Image" class="product-image">
+            <div class="item-details">
+                <h3>Organic Ginger</h3>
+                <div class="quantity">Qty: 250g</div>
+                <div class="price">Rs. 250.00</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="order_container">
+    <div class="summary-section">
+        <div class="vouchers">
+            <label>FreshFair Voucher</label>
+            <span>No Applicable Voucher</span>
+        </div>
+        <div class="promo-code">
+            <label for="promo-code">Promo Code</label>
+            <input type="text" id="promo-code" placeholder="Enter FreshFair Code">
+        </div>
+        <div class="order-summary">
+            <div class="summary-item">
+                <span>Items Total</span>
+                <span>Rs. 1750.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Delivery Fee</span>
+                <span>Rs. 159.00</span>
+            </div>
+            <div class="total-payment">
+                <span>Total Payment</span>
+                <span>Rs. 1909.00</span>
+            </div>
+        </div>
+        <button class="regbtn">Add to cart</button>
+    </div>
+</div>
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+    <section class="box-container">
+    
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="enter your email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+            <img src="image/payment.png" class="payment" alt="">
+        </div>
+    
+    </section>
+
+</footer>
+
+<div class="credit">
+    <i class="far fa-copyright fa-lx"></i>2024 BY FreshFair
+</div>
+<!-- footer section ends -->
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
