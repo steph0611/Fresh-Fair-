@@ -11,6 +11,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles2.css">
 
 </head>
 <body>
@@ -116,143 +117,373 @@
     <p> <a href="home.html">home >></a> Order </p>
 </div>
 
-
-<div class="order_container">
-    <div class="address-section">
-        <button class="add-address-btn">+ Add New Delivery Address</button>
+<!-- Fruits Section -->
+<div class="deals-container" id="fruits">
+    <div class="parallax">
+        <div class="Ntitle">FRUITS</div>
     </div>
-
-    <div class="order_container">
-        <form class="address-form">
-            <div class="form-group">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" placeholder="Input full name">
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./Fruits/apple.jpg" alt="Apples">
+            <label for="apple">Apples (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.20" id="apple">
             </div>
-            <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" placeholder="House no. / building / street / area">
-            </div>
-            <div class="form-group">
-                <label for="mobile-number">Mobile Number</label>
-                <input type="text" id="mobile-number" placeholder="Input mobile number">
-            </div>
-            <div class="form-group">
-                <label for="landmark">Landmark (Optional)</label>
-                <input type="text" id="landmark" placeholder="E.g. beside train station">
-            </div>
-            <div class="form-group">
-                <label for="province">Province</label>
-                <select id="province">
-                    <option value="" disabled selected>Please choose your province</option>
-                    <option value="central">Central</option>
-                    <option value="eastern">Eastern</option>
-                    <option value="maldives">Maldives</option>
-                    <option value="north-central">North Central</option>
-                    <option value="northern">Northern</option>
-                    <option value="north-western">North Western</option>
-                    <option value="sabaragamuwa">Sabaragamuwa</option>
-                    <option value="southern">Southern</option>
-                    <option value="uva">Uva</option>
-                </select>
-<br>
-<br>
-
-                <label for="City">City</label>
-                <input type="text" id="City" placeholder="Input City">
-
-                <br>
-                <br>
-
-                <label for="Area">Area</label>
-                <input type="text" id="Area" placeholder="Input Area">
-
-                
-            </div>
-            <div class="form-group">
-                <label>Select a label for effective delivery:</label>
-                <div class="delivery-labels">
-                    <button type="button" class="label-btn">Home</button>
-                    <button type="button" class="label-btn">Office</button>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Default Address (Optional)</label>
-                <div class="checkbox-group">
-                    <div>
-                        <input type="checkbox" id="default-delivery">
-                        <label for="default-delivery">Default delivery address</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="default-billing">
-                        <label for="default-billing">Default billing address</label>
-                    </div>
-                </div>
-                <p>Your existing default address setting will be replaced if you make some changes here.</p>
-            </div>
-            <button type="submit" class="regbtn">Save</button>
-        </form>
-    </div>
-
-
-</div>
-<div class="order_container">
-    <div class="order-section">
-        <div class="order-item">
-            <img src="./dairy 2/7.png" alt="Product Image" class="product-image">
-            <div class="item-details">
-                <h3>Strawbery Ice Cream</h3>
-                <div class="quantity">Qty: 1</div>
-                <div class="price">Rs. 650.00</div>
-            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 300</p>
         </div>
-
-        <div class="order-item">
-            <img src="./vegetables/pumpkin.jpg" alt="Product Image" class="product-image">
-            <div class="item-details">
-                <h3>Organic Pumpkin</h3>
-                <div class="quantity">Qty: 1kg</div>
-                <div class="price">Rs. 850.00</div>
+        <div class="order-grid-item">
+            <img src="./Fruits/banana.jpg" alt="Bananas">
+            <label for="banana">Bananas (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.75" id="banana">
             </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 188</p>
         </div>
-
-        <div class="order-item">
-            <img src="./vegetables/giner.jpg" alt="Product Image" class="product-image">
-            <div class="item-details">
-                <h3>Organic Ginger</h3>
-                <div class="quantity">Qty: 250g</div>
-                <div class="price">Rs. 250.00</div>
+        <div class="order-grid-item">
+            <img src="./Fruits/grapes.jpg" alt="Grapes">
+            <label for="grapes">Grapes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.50" id="grapes">
             </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 375</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/orange.jpg" alt="Oranges">
+            <label for="orange">Oranges (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.30" id="orange">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 325</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/papaya.jpg" alt="Pineapples">
+            <label for="pineapple">Pineapples (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.80" id="pineapple">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 450</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/mango.jpg" alt="Mangoes">
+            <label for="mango">Mangoes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.20" id="mango">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 550</p>
         </div>
     </div>
 </div>
-<div class="order_container">
-    <div class="summary-section">
-        <div class="vouchers">
-            <label>FreshFair Voucher</label>
-            <span>No Applicable Voucher</span>
-        </div>
-        <div class="promo-code">
-            <label for="promo-code">Promo Code</label>
-            <input type="text" id="promo-code" placeholder="Enter FreshFair Code">
-        </div>
-        <div class="order-summary">
-            <div class="summary-item">
-                <span>Items Total</span>
-                <span>Rs. 1750.00</span>
+
+<!-- Vegetables Section -->
+<div class="deals-container" id="vegetables">
+    <div class="parallax">
+        <div class="Ntitle">VEGETABLES</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./vegetables/carrot.webp" alt="Carrots">
+            <label for="carrot">Carrots (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.75" id="carrot">
             </div>
-            <div class="summary-item">
-                <span>Delivery Fee</span>
-                <span>Rs. 159.00</span>
-            </div>
-            <div class="total-payment">
-                <span>Total Payment</span>
-                <span>Rs. 1909.00</span>
-            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 188</p>
         </div>
-        <button class="regbtn">Add to cart</button>
+        <div class="order-grid-item">
+            <img src="./vegetables/broccoli.jpg" alt="Broccoli">
+            <label for="broccoli">Broccoli (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.30" id="broccoli">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 325</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/potato.jpg" alt="Potatoes">
+            <label for="potato">Potatoes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.40" id="potato">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 100</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/spinach.avif" alt="Spinach">
+            <label for="spinach">Spinach (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.60" id="spinach">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 150</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/tomato.png" alt="Tomatoes">
+            <label for="tomato">Tomatoes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.80" id="tomato">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 200</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/pepper.jpg" alt="Peppers">
+            <label for="pepper">Peppers (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.00" id="pepper">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 250</p>
+        </div>
     </div>
 </div>
 
+<!-- Baking and Cooking Ingredients Section -->
+<div class="deals-container" id="baking-cooking">
+    <div class="parallax">
+        <div class="Ntitle">BAKING AND COOKING INGREDIENTS</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./bakery/bread.jpg" alt="Bread">
+            <label for="bread">Bread (loaves):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="90.0" id="bread">
+            </div>
+            <p class="price-info">Price per loaf</p>
+            <p class="price">Price: Rs. 90</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/muffin2.jpg" alt="Muffins">
+            <label for="muffin">Muffins (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="36.0" id="muffin">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 36</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/crest.png" alt="Croissants">
+            <label for="croissant">Croissants (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="54.0" id="croissant">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 54</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/cake.jpg" alt="Cake">
+            <label for="cake">Cake (slices):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="100.0" id="cake">
+            </div>
+            <p class="price-info">Price per slice</p>
+            <p class="price">Price: Rs. 100</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/cookies.jpg" alt="Cookies">
+            <label for="cookies">Cookies (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="15.0" id="cookies">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 15</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/pastry.jpg" alt="Pastry">
+            <label for="pastry">Pastry (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="60.0" id="pastry">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 60</p>
+        </div>
+    </div>
+</div>
+
+<!-- Meat & Seafood Section -->
+<div class="deals-container" id="meat-seafood">
+    <div class="parallax">
+        <div class="Ntitle">MEAT & SEAFOOD</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./meat/Chicken.jpg" alt="Chicken">
+            <label for="chicken">Chicken (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.90" id="chicken">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 225</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/hurulla.jpg" alt="Fish">
+            <label for="fish">Fish (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.80" id="fish">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 450</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/prawns.jpg" alt="Shrimp">
+            <label for="shrimp">Shrimp (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.70" id="shrimp">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 675</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/beefcubes.jpg" alt="Beef">
+            <label for="beef">Beef (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.00" id="beef">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 500</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/pork cubs.jpg" alt="Pork">
+            <label for="pork">Pork (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.60" id="pork">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 400</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/crab.jpg" alt="Crab">
+            <label for="crab">Crab (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.50" id="crab">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 625</p>
+        </div>
+    </div>
+</div>
+
+<!-- Dairy Products Section -->
+<div class="deals-container" id="dairy-products">
+    <div class="parallax">
+        <div class="Ntitle">DAIRY PRODUCTS</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./dairy 2/milk.png" alt="Milk">
+            <label for="milk">Milk (liters):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="180.0" id="milk">
+            </div>
+            <p class="price-info">Price per liter</p>
+            <p class="price">Price: Rs. 180</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/cheese.jpg" alt="Cheese">
+            <label for="cheese">Cheese (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="3.60" id="cheese">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 900</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/yourghurt.jpg" alt="Yogurt">
+            <label for="yogurt">Yogurt (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.10" id="yogurt">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 275</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/butter.jpg" alt="Butter">
+            <label for="butter">Butter (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="4.00" id="butter">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 1000</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/cream.avif" alt="Cream">
+            <label for="cream">Cream (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.50" id="cream">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 625</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/ice cream.jpg" alt="Ice Cream">
+            <label for="icecream">Ice Cream (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.00" id="icecream">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 500</p>
+        </div>
+    </div>
+</div>
+
+
+<button id="add-to-cart">Add to Cart</button>
+
+<h2>Order Summary</h2>
+<table id="order-summary">
+<thead>
+    <tr>
+        <th>Item</th>
+        <th>Quantity/Weight</th>
+        <th>Price (LKR)</th>
+        <th>Remove</th>
+    </tr>
+</thead>
+<tbody>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="2">Total</td>
+        <td id="total-price">Rs. 0.00</td>
+        <td></td>
+    </tr>
+</tfoot>
+</table>
+
+<button id="buy-now">Buy Now</button>
+<button id="save-summary">Save and Proceed to Payment</button>
+
+<button id="add-favourites">Add to Favourites</button>
+<button id="apply-favourites">Apply Favourites</button>
 
 <!-- footer section starts  -->
 
@@ -308,6 +539,7 @@
 <!-- footer section ends -->
 
 
-<script src="./js/script.js"></script>
+
+<script src="./js/script2.js"></script>
 </body>
 </html>
