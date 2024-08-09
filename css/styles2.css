@@ -100,9 +100,13 @@ button:hover {
 }
 
 .price {
-    font-size: 1.5em; /* Adjust the size as needed */
+    font-size: 1.5em; 
     font-weight: bold;
-    color: #000; /* You can also change the color if needed */
-    margin-top: 5px; /* Add some space above the price */
+    color: #000;
+    margin-top: 5px; 
 }
 
+.price-info{
+    font-size: 1.5em;
+    color: #000;
+}
