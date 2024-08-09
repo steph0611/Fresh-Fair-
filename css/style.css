@@ -1537,13 +1537,13 @@ th, td {
 
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: #666;
+  color: #000000;
   padding-bottom: .5rem;
 }
 
 .footer .box-container .box a {
   font-size: 1.4rem;
-  color: #666;
+  color: #000000;
   padding: 1rem 0;
   display: block;
 }
