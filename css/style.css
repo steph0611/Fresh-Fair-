@@ -116,7 +116,7 @@ section {
   display: inline-block;
   padding: .8rem 3rem;
   background: #184d47;
-  color: #000000;
+  color: #fff;
   font-size: 1.7rem;
   cursor: pointer;
 }
@@ -824,7 +824,7 @@ section {
 
 
 .parallax {
-  background-color: #0a6357;
+  background: url(/image/back12.jpg) no-repeat;
   height: max-content;
   background-attachment: fixed;
   background-position: center;
@@ -1537,13 +1537,13 @@ th, td {
 
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: #000000;
+  color: #666;
   padding-bottom: .5rem;
 }
 
 .footer .box-container .box a {
   font-size: 1.4rem;
-  color: #000000;
+  color: #666;
   padding: 1rem 0;
   display: block;
 }
